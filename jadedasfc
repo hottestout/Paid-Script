@@ -690,7 +690,7 @@ for i, name in ipairs(tabNames) do
 			bloodLabel.Size = UDim2.new(0, 180, 0, 16)
 			bloodLabel.Position = UDim2.new(0, 10, 0, 4)
 			bloodLabel.BackgroundTransparency = 1
-			bloodLabel.Text = "Is Jaz Pretty? (0-100)"
+			bloodLabel.Text = "Blood Trail"
 			bloodLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 			bloodLabel.Font = Enum.Font.GothamBold
 			bloodLabel.TextSize = 11
