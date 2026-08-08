@@ -122,7 +122,7 @@ greetingText.Parent = homePage
 local hitboxEnabled = false
 local currentHitboxSize = 5
 local currentHitboxTransparency = 0.7
-local currentBloodIntensity = 0
+local currentBloodIntensity = 100
 
 -- Camlock State Variables
 local camlockEnabled = false
