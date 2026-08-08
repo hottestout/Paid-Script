@@ -144,9 +144,13 @@ local originalFogColor = Lighting.FogColor
 -- Visual ESP State Variables
 local espBoxEnabled = false
 local espBoxType = "2D"
+local espFilledEnabled = false
+local espDistanceEnabled = false
 local espNameEnabled = false
 local espHealthEnabled = false
+local espSnapLineEnabled = false
 local espBoneEnabled = false
+local limitDistanceEnabled = false
 
 -- Keybind Variable
 local camlockKeybind = Enum.KeyCode.E
@@ -1678,9 +1682,13 @@ for i, name in ipairs(tabNames) do
 			end))
 
 			-- Remaining ESP Toggles
+			createVisualToggle("-", false, function(state) espFilledEnabled = state end)
+			createVisualToggle("-", false, function(state) espDistanceEnabled = state end)
 			createVisualToggle("ESP Name", false, function(state) espNameEnabled = state end)
 			createVisualToggle("ESP Health", false, function(state) espHealthEnabled = state end)
+			createVisualToggle("-", false, function(state) espSnapLineEnabled = state end)
 			createVisualToggle("ESP Bone", false, function(state) espBoneEnabled = state end)
+			createVisualToggle("-", false, function(state) limitDistanceEnabled = state end)
 		end
 		
 		table.insert(connections, btn.MouseButton1Click:Connect(function()
