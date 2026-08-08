@@ -2085,3 +2085,13 @@ RunService.RenderStepped:Connect(function()
         end
     end
 end)
+
+--Can Collide
+RunService.Stepped:Connect(function()
+	if not hitboxEnabled or not originalPartStates then return end
+	for targetPart, _ in pairs(originalPartStates) do
+		if targetPart and targetPart.Parent then
+			targetPart.CanCollide = false
+		end
+	end
+end)
