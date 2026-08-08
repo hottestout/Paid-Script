@@ -144,13 +144,9 @@ local originalFogColor = Lighting.FogColor
 -- Visual ESP State Variables
 local espBoxEnabled = false
 local espBoxType = "2D"
-local espFilledEnabled = false
-local espDistanceEnabled = false
 local espNameEnabled = false
 local espHealthEnabled = false
-local espSnapLineEnabled = false
 local espBoneEnabled = false
-local limitDistanceEnabled = false
 
 -- Keybind Variable
 local camlockKeybind = Enum.KeyCode.E
